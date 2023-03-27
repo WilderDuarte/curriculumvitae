@@ -8,16 +8,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     color: #1d273b;
     font-weight: 300;
-}
+} */
 
 h1 {
     font-size: 50px;
 }
 
-/* Espacio de trabajo para menú y foto principal*/
+/* Espacio de trabajo para menú, foto principal y demás elementos*/
 .contenedor {
     width: 90%; /* toma  el porcentaje del ancho de la pantalla*/
     max-width: 1500px; /* establece el ancho máximo de contenedor */
@@ -82,7 +82,8 @@ nav {
     transition: all ease-in-out .6s;
 }
 
-.titulos {
+/* títulos profesionales en la presentación de la foto */
+.titulospro {
     display: block;
     text-align: left;    
     margin: 20px 0;
@@ -130,18 +131,18 @@ nav {
 
 .contenido-header a {
     margin: 28px 0 0 0;
-    width: 130px;
+    width: 150px;
     display: inline-block; /* para asignar propiedades de bloque */
     background: #d03d3d;
     text-align: center;
-    color: #fff;
+    color: white;
     padding: 12px 0;
     text-decoration: none;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 5px;
-    /* box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46); */
+    box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
 }
 
 /* .hamburguer {
@@ -161,7 +162,83 @@ nav {
 
 
 
-/* Footer */
+/* ######################## EDUCACION ######################## */
+.educacion {
+    background: #f2f2f2;
+}
+
+/* fondo completo de los estudios */
+.content-educacion {
+    display: flex; /* los elementos tomen el espacio disponible para distribuirse */
+    flex-wrap: wrap; /* permitir controlar la direccion de los elementos hijos para que flyan en varias lineas */
+    margin-top: 50px;
+    justify-content: space-around; /* los elementos repartirán el espacio sobrante de su contenedor de manera equitativa a sus alrededores, creando un espacio también a los bordes*/
+}
+
+/* cada columna correspondiente a los estudios */
+.articulo {
+    width: 29%;
+    background: #fff;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+}
+
+.articulo:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+}
+
+.articulo>h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.articulo > i {
+    color: #d03d3d;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 3px solid #d03d3d;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    line-height: 48px;
+}
+
+.articulo > i:hover {
+    color: #fff;
+    background: #d03d3d;
+    transition: .5s;
+}
+
+.articulo > a {
+    text-decoration: none;
+    color: black;
+}
+
+.articulo > a:hover {
+    color: #d03d3d;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ######################## FOOTER ######################## */
 footer {
     background: #f2f2f2;
     padding: 20px 0;
@@ -202,6 +279,7 @@ footer {
 .contact > i {
     float: left;
     margin: 0 0 0 10px;
+    color: #565759;
     border: 1px solid #565759;
     border-radius: 50%;
     height: 30px;
