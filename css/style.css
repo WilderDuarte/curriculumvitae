@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Hace que los valores de las propiedades se sumen para mantener siempre el ancho y el alto*/
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1d273b;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/* Espacio de trabajo para menú y foto principal*/
+.contenedor {
+    width: 90%; /* toma  el porcentaje del ancho de la pantalla*/
+    max-width: 1500px; /* establece el ancho máximo de contenedor */
+    margin: auto; /* centra contenedor en la página con el ancho de 1500 */
+    overflow: hidden; /* No permite scroll horizontal en el caso de exceder el ancho de 1500 asignado */
+}
+
+/* pseudoclase para lograr fijar el menú en la pate superior con position fixed */ 
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+/* Menú de navegación */
+nav {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex; /* permita elementos al lado */
+    /* justify-content: space-between; mantenga espacio entre ellos */
+    height: 80px;
+    width: 100%;
+    align-items: center; /* centre verticalmente */ 
+    padding: 0 40px;
+}
+
+/* .nav .logo {
+    height: 80px;
+}
+
+.nav .logo img {
+    height: 100%;
+    vertical-align: top;
+} */
+
+.enlaces-header {
+    font-weight: 300;
+    margin: auto; /* centra las opciones del menú */
+}
+
+.nav .enlaces-header a {
+    color: #5D6678;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.nav .enlaces-header a:hover {
+    color: #fff;
+    background-color: #d03d3d;
+    border-color: #d03d3d;
+    transition: all ease-in-out .6s;
+}
+
+.titulos {
+    display: block;
+    text-align: left;    
+    margin: 20px 0;
+}
+
+/* Imagen de perfil principal */
+.contenido-header {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contenido-header>img {
+    width: 550px; /* El ancho de la imagen de perfil*/
+    height: 550px; /* El alto de la imagen de perfil*/
+    animation: ease-in animacion 0.5s; /* la asignación de la animación */
+}   
+
+/* Animacion para la imagen */  
+@keyframes animacion {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Propiedades para el botón de perfil */ 
+.textos-header {
+    margin: 0 0 0 30px;
+}
+
+.contenido-header p {
+    font-weight: 300;
+    margin-top: 14px;
+    color: #5D6678;
+    text-align: justify;
+}
+
+.contenido-header a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block; /* para asignar propiedades de bloque */
+    background: #d03d3d;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    /* box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46); */
+}
+
+/* .hamburguer {
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+.hamburguer>i {
+    font-size: 25px;
+    line-height: 80px;
+} */
+
+
+
+/* Footer */
+footer {
+    background: #f2f2f2;
+    padding: 20px 0;
+    padding-top: 30px;
+    overflow: hidden; /* Para evitar que se rompa en caso exceda el tamaño */
+    display: flex; /* un elemento flexible para alterar sus dimensiones y llenar el espacio disponible */ 
+    flex-wrap: wrap; /* permitir controlar la direccion de los elementos hijos */
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter {
+    width: 20%;
+    text-align: center;
+}
+
+.partFooter img {
+    width: 60%;
+}
+
+.partFooter h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: #d03d3d;
+    padding: 5px;
+    border: 1px solid #d03d3d;
+    border-radius: 5px;
+}
+
+.contact {
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact > i {
+    float: left;
+    margin: 0 0 0 10px;
+    border: 1px solid #565759;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact > p {
+    margin-left: 50px;
+    align-items: center;
+    line-height: 28px;
+    font-weight: 500;
+    color: #565759;
+}
+
+.partFooter > a {
+    display: block;
+    text-decoration: none;
+    color: #565759;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.partFooter > a:hover {
+    color: #fff;
+    background-color: #cf6c6c;
+    border-color: #cf6c6c;
+    transition: all ease-in-out .6s;
+    border-radius: 5px;
+}
+
+.social-media > a > i {
+    font-size: 20px;
+    display: inline-block; /*los elementos block ocupan todo el espacio, inline para que estén seguidos*/
+    color: #565759;
+    border: 1px solid #565759;
+    border-radius: 50%; /* hacerlo redondon */
+    width: 38px; /* hacerlo cuadrado para el efecto de border radius */
+    height: 38px; /* hacerlo cuadrado para el efecto de border radius */
+    line-height: 36px; /* para centrar */
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media > a > i:hover {
+    color: #fff;
+    background-color: #d03d3d;
+    border-color: #d03d3d;
+}
