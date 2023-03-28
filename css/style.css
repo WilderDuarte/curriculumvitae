@@ -147,7 +147,7 @@ nav {
 
 /* cada columna correspondiente a los estudios */
 .articulo {
-    width: 29%;
+    width: 23%;
     background: #fff;
     margin-bottom: 50px;
     border-radius: 10px;
@@ -254,7 +254,7 @@ nav {
     margin-bottom: 50px;
     transition: 0.5s;
     text-align: center;
-   padding-top: 50px;
+    padding-top: 50px;
 }
 
 .skills h2 {
@@ -267,23 +267,24 @@ nav {
     height: 60px;
     margin-top: 20px;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 5px;
     /* border-radius: 50%; */
     /* border: 3px solid #565759; */
     padding: 5px;
     color: #565759;
-    filter: grayscale(1);
+    /* filter: grayscale(1); */
 }
 
 .skills img:hover {
     transition-duration: .7s;
-    filter: grayscale(0);
+    /* filter: grayscale(0); */
     transform: rotate(360deg);
 }
 
 /* ######################## CERTIFICADOS ######################## */
 .certificados {
     background: #f2f2f2;
+    padding: 0 100px;
 }
 
 .content-certificados {
@@ -297,11 +298,16 @@ nav {
     background-color: #fff;
     border: 1px solid #fff;
     border-radius: 5px;
-    width: 25%;
-    margin-top: 30px;
-    margin-right: 20px;
+    width: 22%;
     padding: 15px 0 15px 35px;
     color: #565759;
+    margin: 30px 20px 20px 0;
+}
+
+.certificate img {
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
 }
 
 .certificate:hover {
@@ -320,9 +326,42 @@ nav {
     color: #fff;
 }
 
+/* ######################## INFO PERSONAL ######################## */
+.content-infopersonal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.space-infoperson {
+    width: 20%;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.space-infoperson img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 10px solid #f2f2f2;
+}
+
+.space-infoperson p {
+    text-align: justify;
+    font-size: 300;
+    color: #565759;
+}
+
+.space-infoperson img:hover {
+    box-shadow: 0 5px 20px rgba(17, 29, 48, .26);
+    transition: .5s;
+}
+
+
 /* ######################## FOOTER ######################## */
 footer {
-    background: #f2f2f2;
+    background: rgb(70, 70, 70);
     padding: 20px 0;
     padding-top: 30px;
     overflow: hidden; /* Para evitar que se rompa en caso exceda el tamaño */
@@ -361,8 +400,8 @@ footer {
 .contact > i {
     float: left;
     margin: 0 0 0 10px;
-    color: #565759;
-    border: 1px solid #565759;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 50%;
     height: 30px;
     width: 30px;
@@ -376,13 +415,13 @@ footer {
     align-items: center;
     line-height: 28px;
     font-weight: 500;
-    color: #565759;
+    color: #fff;
 }
 
 .partFooter > a {
     display: block;
     text-decoration: none;
-    color: #565759;
+    color: #fff;
     margin-bottom: 10px;
     font-weight: 500;
     padding: 5px;
@@ -399,8 +438,8 @@ footer {
 .social-media > a > i {
     font-size: 20px;
     display: inline-block; /*los elementos block ocupan todo el espacio, inline para que estén seguidos*/
-    color: #565759;
-    border: 1px solid #565759;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 50%; /* hacerlo redondon */
     width: 38px; /* hacerlo cuadrado para el efecto de border radius */
     height: 38px; /* hacerlo cuadrado para el efecto de border radius */
