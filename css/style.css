@@ -15,7 +15,7 @@ h1 {
 /* Espacio de trabajo para menú, foto principal y demás elementos*/
 .contenedor {
     width: 90%; /* toma  el porcentaje del ancho de la pantalla*/
-    max-width: 1500px; /* establece el ancho máximo de contenedor */
+    max-width: 1400px; /* establece el ancho máximo de contenedor */
     margin: auto; /* centra contenedor en la página con el ancho de 1500 */
     overflow: hidden; /* No permite scroll horizontal en el caso de exceder el ancho de 1500 asignado */
 }
@@ -41,11 +41,10 @@ nav {
 
 .nav {
     display: flex; /* permita elementos al lado */
-    /* justify-content: space-between; mantenga espacio entre ellos */
     height: 80px;
     width: 100%;
-    align-items: center; /* centre verticalmente */ 
-    padding: 0 40px;
+    align-items: center; 
+    /* padding: 0 40px; REVISAR BIEN */
 }
 
 .enlaces-header {
@@ -70,14 +69,14 @@ nav {
 
 /* títulos profesionales en la presentación de la foto */
 .titulospro {
-    display: block;
+    /* display: block; REVISAR BIEN */
     text-align: left;    
     margin: 20px 0;
 }
 
 /* Imagen de perfil principal */
 .contenido-header {
-    width: 1200px;
+    width: 80%;
     height: 600px;
     display: flex;
     justify-content: space-between;
@@ -87,9 +86,9 @@ nav {
 }
 
 .contenido-header>img {
-    width: 300px; /* El ancho de la imagen de perfil*/
-    height: 300px; /* El alto de la imagen de perfil*/
-    animation: ease-in animacion 0.5s; /* la asignación de la animación */
+    width: 300px; 
+    height: 300px;
+    animation: ease-in animacion 0.5s; 
     margin-left: 50px;
 }   
 
@@ -132,7 +131,7 @@ nav {
     box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
 }
 
-/* ######################## EDUCACION ######################## */
+/* ################################## EDUCACION ################################## */
 .educacion {
     background: #f2f2f2;
 }
@@ -196,7 +195,7 @@ nav {
 }
 
 
-/* ######################## EXPERIENCIA ######################## */
+/* ################################## EXPERIENCIA ################################## */
 .experiencia {
     background-color: #d03d3d;
     color: #fff;
@@ -210,7 +209,7 @@ nav {
 }
 
 .experience {
-    width: 30%;
+    width: 32%;
     border: 2px solid #fff;
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -223,7 +222,6 @@ nav {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
 }
 
-/* .experience h3 {} */
 .experience img {
     height: 70px;
     width: auto;
@@ -238,26 +236,20 @@ nav {
 }
 
 
-/* ######################## SKILLS ######################## */
-/* .habilidades { */
-    /* background: #f2f2f2; */
-/* } */
-
+/* ################################## SKILLS ################################## */
 .content-skills {
     display: flex; 
     flex-wrap: wrap; 
     margin-top: 70px;
     justify-content: space-evenly; 
-    padding: 0 150px;
 }
 .skills {
     width: 23%;
     margin-bottom: 70px;
     transition: 0.5s;
     text-align: center;
-    /* padding-top: 50px; */
     background-color: #f2f2f2;
-    padding: 20px;
+    padding-top: 10px;
     border-radius: 5px;
 }
 
@@ -272,16 +264,12 @@ nav {
     margin-top: 20px;
     cursor: pointer;
     margin: 0 5px;
-    /* border-radius: 50%; */
-    /* border: 3px solid #565759; */
     padding: 5px;
     color: #565759;
-    /* filter: grayscale(1); */
 }
 
 .skills img:hover {
     transition-duration: .7s;
-    /* filter: grayscale(0); */
     transform: rotate(360deg);
 }
 
@@ -292,7 +280,7 @@ nav {
     transition: .5s;    
 }
 
-/* ######################## CERTIFICADOS ######################## */
+/* ################################## CERTIFICADOS ################################## */
 .certificados {
     background: #f2f2f2;
     padding: 0 100px;
@@ -337,7 +325,7 @@ nav {
     color: #fff;
 }
 
-/* ######################## INFO PERSONAL ######################## */
+/* ################################## INFO PERSONAL ################################## */
 .content-infopersonal {
     display: flex;
     flex-wrap: wrap;
@@ -346,7 +334,7 @@ nav {
 }
 
 .space-infoperson {
-    width: 20%;
+    width: 30%;
     /* margin: auto; */
     text-align: center;
 }
@@ -370,7 +358,7 @@ nav {
 }
 
 
-/* ######################## FOOTER ######################## */
+/* ################################## FOOTER ################################## */
 footer {
     background: rgb(70, 70, 70);
     padding: 20px 0;
@@ -466,4 +454,35 @@ footer {
     color: #fff;
     background-color: #d03d3d;
     border-color: #d03d3d;
+}
+
+/* ################################## BREAKPOINTS RESPONSIVE WEB ################################## */
+@media screen and (max-width:800px) {
+    
+    /* #header {
+        width: 800px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    nav, .nav {
+        width: 100%;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    .contenido-header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 700px;
+    }
+
+    .articulo {
+        width: 45%;
+    } */
+
 }
