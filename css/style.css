@@ -132,6 +132,13 @@ nav {
 }
 
 /* ################################## EDUCACION ################################## */
+.title {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 .educacion {
     background: #f2f2f2;
 }
@@ -244,12 +251,12 @@ nav {
     justify-content: space-evenly; 
 }
 .skills {
-    width: 23%;
+    width: 32%;
     margin-bottom: 70px;
     transition: 0.5s;
     text-align: center;
     background-color: #f2f2f2;
-    padding-top: 10px;
+    padding: 20px;
     border-radius: 5px;
 }
 
@@ -266,6 +273,10 @@ nav {
     margin: 0 5px;
     padding: 5px;
     color: #565759;
+}
+
+.skills img.softskills {
+    height: 68px;
 }
 
 .skills img:hover {
