@@ -147,7 +147,7 @@ nav {
 .content-educacion {
     display: flex; /* los elementos tomen el espacio disponible para distribuirse */
     flex-wrap: wrap; /* permitir controlar la direccion de los elementos hijos para que flyan en varias lineas */
-    margin-top: 50px;
+    margin-bottom: 50px;
     justify-content: space-around; /* los elementos repartirán el espacio sobrante de su contenedor de manera equitativa a sus alrededores, creando un espacio también a los bordes*/
 }
 
@@ -155,7 +155,7 @@ nav {
 .articulo {
     width: 23%;
     background: #fff;
-    margin-bottom: 50px;
+    margin-top: 50px;
     border-radius: 10px;
     padding: 45px 30px 60px 30px;
     transition: 0.5s;
@@ -247,7 +247,7 @@ nav {
 .content-skills {
     display: flex; 
     flex-wrap: wrap; 
-    margin-top: 70px;
+    margin-top: 50px;
     justify-content: space-evenly; 
 }
 .skills {
@@ -468,10 +468,52 @@ footer {
 }
 
 /* ################################## BREAKPOINTS RESPONSIVE WEB ################################## */
+@media screen and (max-width:1000px) {
+
+    .nav .enlaces-header a {
+        margin: 0;
+    }
+
+    .textos-header h1 {
+        font-size: 40px;
+    }
+
+    .textos-header {
+        margin: 0;
+    }
+
+    .space-infoperson p {
+        margin-bottom: 20px;
+    }
+
+    .content-infopersonal {
+        margin: 20px 0;
+    }
+
+    .space-infoperson {
+        width: 95%;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+}
+
 @media screen and (max-width:800px) {
 
+
+    
     h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .contenido-header {
@@ -479,6 +521,12 @@ footer {
         justify-content: space-evenly;
         height: 700px;
     }
+
+    .contenido-header>img {
+        width: 150px; 
+        height: 150px;
+        animation: ease-in animacion 0.5s; 
+    } 
 
     .articulo, .experience, .certificate {
         width: 45%;
@@ -490,16 +538,119 @@ footer {
 
     .content-infopersonal {
         flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 20px;;
     }
 
     .space-infoperson {
-        width: 90%;
+        width: 100%;
         margin: 20px 0;
-        text-align: center;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
     }
 
     .partFooter {
         width: 45%;
         text-align: center;
     }
+}
+
+@media screen and (max-width:600px){
+    h1 {
+        font-size: 25px;
+    }
+
+    .contenido-header {
+        width: 100%;
+        height: 550px;
+    }
+
+    .contenido-header>img {
+        width: 120px; 
+        height: 120px;
+        animation: ease-in animacion 0.5s; 
+    }  
+    
+    .articulo, .experience, .certificate, .skills {
+        width: 90%;
+    }
+
+    .skills {
+        margin-bottom: 20px;
+    }
+
+    .certificate {
+        width: 45%;
+    }
+
+    .articulo, .experience, .content-skills {
+        margin-top: 20px;
+    }
+
+    .content-skills {
+        margin-bottom: 20px;
+    }
+
+    .content-certificados {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .certificate {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .content-infopersonal {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .space-infoperson {
+        width: 95%;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .partFooter img {
+        display: none;
+    }
+
+    .partFooter {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* .contact {
+        display: block;
+    } */
+
+    .partFooter h4 {
+        margin-bottom: 5px;
+    }
+
 }
