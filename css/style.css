@@ -468,7 +468,31 @@ footer {
 }
 
 /* ################################## BREAKPOINTS RESPONSIVE WEB ################################## */
+@media screen and (min-width:1000px) and (max-width:1200px) {
+
+    .space-infoperson img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
 @media screen and (max-width:1000px) {
+   
+    h1 {
+        font-size: 35px;
+    }
+
+    .contenido-header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 700px;
+    }
+
+    .contenido-header>img {
+        width: 150px; 
+        height: 150px;
+        animation: ease-in animacion 0.5s; 
+    } 
 
     .nav .enlaces-header a {
         margin: 0;
@@ -480,6 +504,14 @@ footer {
 
     .textos-header {
         margin: 0;
+    }
+
+    .contenido-header>img {
+        margin: 0;
+    }
+
+    .articulo {
+        width: 45%;
     }
 
     .space-infoperson p {
@@ -509,24 +541,6 @@ footer {
 }
 
 @media screen and (max-width:800px) {
-
-
-    
-    h1 {
-        font-size: 35px;
-    }
-
-    .contenido-header {
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 700px;
-    }
-
-    .contenido-header>img {
-        width: 150px; 
-        height: 150px;
-        animation: ease-in animacion 0.5s; 
-    } 
 
     .articulo, .experience, .certificate {
         width: 45%;
@@ -589,10 +603,6 @@ footer {
         margin-bottom: 20px;
     }
 
-    .certificate {
-        width: 45%;
-    }
-
     .articulo, .experience, .content-skills {
         margin-top: 20px;
     }
@@ -645,12 +655,8 @@ footer {
         margin: auto;
     }
 
-    /* .contact {
-        display: block;
-    } */
-
     .partFooter h4 {
         margin-bottom: 5px;
     }
-
 }
+
