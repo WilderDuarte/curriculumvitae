@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*Hace que los valores de las propiedades se sumen para mantener siempre el ancho y el alto*/
+    box-sizing: border-box; 
 }
 
 body {
@@ -12,22 +12,20 @@ h1 {
     font-size: 50px;
 }
 
-/* Espacio de trabajo para menú, foto principal y demás elementos*/
 .contenedor {
-    width: 90%; /* toma  el porcentaje del ancho de la pantalla*/
-    max-width: 1400px; /* establece el ancho máximo de contenedor */
-    margin: auto; /* centra contenedor en la página con el ancho de 1500 */
-    overflow: hidden; /* No permite scroll horizontal en el caso de exceder el ancho de 1500 asignado */
+    width: 90%; 
+    max-width: 1400px; 
+    margin: auto; 
+    overflow: hidden; 
 }
 
-/* pseudoclase para lograr fijar el menú en la pate superior con position fixed */ 
 header::before {
     content: "";
     display: block;
     margin-bottom: 80px;
 }
 
-/* Menú de navegación */
+/* ################################## MENÚ DE NAVEGACIÓN ################################## */
 nav {
     width: 100%;
     height: 80px;
@@ -40,16 +38,15 @@ nav {
 }
 
 .nav {
-    display: flex; /* permita elementos al lado */
+    display: flex;
     height: 80px;
     width: 100%;
     align-items: center; 
-    /* padding: 0 40px; REVISAR BIEN */
 }
 
 .enlaces-header {
     font-weight: 300;
-    margin: auto; /* centra las opciones del menú */
+    margin: auto;
     transition: all ease-in-out .6s;
 }
 
@@ -83,16 +80,11 @@ nav {
     line-height: 80px;
 }
 
-
-
-/* títulos profesionales en la presentación de la foto */
 .titulospro {
-    /* display: block; REVISAR BIEN */
     text-align: left;    
     margin: 20px 0;
 }
 
-/* Imagen de perfil principal */
 .contenido-header {
     width: 80%;
     height: 600px;
@@ -109,8 +101,7 @@ nav {
     animation: ease-in animacion 0.5s; 
     margin-left: 50px;
 }   
-
-/* Animacion para la imagen */  
+ 
 @keyframes animacion {
     0% {
         transform: scale(0);
@@ -121,7 +112,6 @@ nav {
     }
 }
 
-/* Propiedades para el botón de perfil */ 
 .textos-header {
     margin: 0 0 0 30px;
 }
@@ -136,7 +126,7 @@ nav {
 .contenido-header a {
     margin: 28px 0 0 0;
     width: 150px;
-    display: inline-block; /* para asignar propiedades de bloque */
+    display: inline-block;
     background: #d03d3d;
     text-align: center;
     color: white;
@@ -161,15 +151,13 @@ nav {
     background: #f2f2f2;
 }
 
-/* fondo completo de los estudios */
 .content-educacion {
-    display: flex; /* los elementos tomen el espacio disponible para distribuirse */
-    flex-wrap: wrap; /* permitir controlar la direccion de los elementos hijos para que flyan en varias lineas */
+    display: flex; 
+    flex-wrap: wrap; 
     margin-bottom: 50px;
-    justify-content: space-around; /* los elementos repartirán el espacio sobrante de su contenedor de manera equitativa a sus alrededores, creando un espacio también a los bordes*/
+    justify-content: space-around; 
 }
 
-/* cada columna correspondiente a los estudios */
 .articulo {
     width: 23%;
     background: #fff;
@@ -393,9 +381,9 @@ footer {
     background: rgb(70, 70, 70);
     padding: 20px 0;
     padding-top: 30px;
-    overflow: hidden; /* Para evitar que se rompa en caso exceda el tamaño */
-    display: flex; /* un elemento flexible para alterar sus dimensiones y llenar el espacio disponible */ 
-    flex-wrap: wrap; /* permitir controlar la direccion de los elementos hijos */
+    overflow: hidden; 
+    display: flex; 
+    flex-wrap: wrap; 
     justify-content: space-evenly;
     margin: auto;
 }
@@ -466,13 +454,13 @@ footer {
 
 .social-media > a > i {
     font-size: 20px;
-    display: inline-block; /*los elementos block ocupan todo el espacio, inline para que estén seguidos*/
+    display: inline-block; 
     color: #fff;
     border: 1px solid #fff;
-    border-radius: 50%; /* hacerlo redondon */
-    width: 38px; /* hacerlo cuadrado para el efecto de border radius */
-    height: 38px; /* hacerlo cuadrado para el efecto de border radius */
-    line-height: 36px; /* para centrar */
+    border-radius: 50%; 
+    width: 38px; 
+    height: 38px; 
+    line-height: 36px; 
     cursor: pointer;
     margin-top: 20px;
     text-align: center;
@@ -610,13 +598,14 @@ footer {
 
     .contenido-header {
         width: 100%;
-        height: 550px;
+        height: 560px;
     }
 
     .contenido-header>img {
         width: 120px; 
         height: 120px;
         animation: ease-in animacion 0.5s; 
+        margin: 20px 0;
     }  
     
     .articulo, .experience, .certificate, .skills {
